@@ -4,17 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://bhabani2005.github.io/react-portfolio",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-bootstrap-icons": "^1.11.5",
